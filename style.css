@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+.text1{
+color: #3A3A3A;
+font-size: 1rem;
+font-weight: 600;
+}
+
+/* nav section */
+
+header{
+    width:100%;
+}
+nav{
+    width:80%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:30px auto;
+}
+nav h3{
+color: #3A3A3A;
+font-family: Poppins;
+font-size: 1.5rem;
+font-weight: 700;
+}
+nav ul{
+    display:flex;
+    align-items: center;
+    gap:34px;
+}
+
+nav ul li a{
+    color: #3A3A3A;
+    font-size: 1rem;
+    font-weight: 600;
+}
+/* banner section */
+.banner{
+    width:80%;
+    background-image: url("images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    background-position:right center;
+    margin:100px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:133px;
+}
+.banner-content{
+max-width: 582px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+}
+.banner-content h1{
+    color: #3A3A3A;
+font-size: 3.2rem;
+font-weight: 700;
+line-height: 70px;
+margin-bottom: 15px;
+}
+.banner-content button{
+    width:196px;
+    height:44px;
+    padding:10px 24px;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 41px;
+    color:white;
+    background-color: #E02C6D;
+    font-size:1rem;
+    font-weight: 700;
+    margin-top: 20px;
+    overflow-y: hidden;
+    border: none;
+}
+button i{
+    margin-top:4px;
+}
+.banner-img img{
+    width:440px;
+    height:414px;
+}
+
+
+
+/* responsive part */
+
+@media screen and (max-width: 576px) {
+    nav{
+        width:100%;
+        flex-direction: column;
+        gap:20px;
+    }
+    nav ul{
+        gap:20px;
+    }
+    .banner{
+        width:100%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap:50px;
+        background-size: 257px 257px;
+        background-position: top center;
+        
+    }
+    .banner-content{
+        width:90%;
+        height: auto;
+        align-items: center;
+        text-align: center;
+    }
+    .banner-content h1{
+        width:404px;
+        font-size: 28px;
+        line-height: normal;
+
+    }
+    .banner-content p{
+        width:321px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .banner-img{
+        margin-top:47px;
+    }
+    .banner-img img{
+        width:202px;
+        height:190px;
+        
+    }
+    
+}
