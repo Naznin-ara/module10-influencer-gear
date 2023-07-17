@@ -48,6 +48,7 @@ nav ul li a{
 /* banner section */
 .banner{
     width:80%;
+    height: auto;
     background-image: url("images/Circle\ design.svg");
     background-repeat: no-repeat;
     background-position:right center;
@@ -94,16 +95,94 @@ button i{
     width:440px;
     height:414px;
 }
+/* sponsor part */
+.sponsor{
+    width:80%;
+    margin: 70px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+/* collection section */
+.collection-div{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.collection-div p{
+color: #3A3A3A;
+font-size: 28px;
+font-weight: 600;
+line-height: 70px;
+}
+.image-gallery{
+    width:70%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap:30px;
+    justify-items: center;
+    margin: 50px auto;
+}
+.card{
+    width:329px;
+    height: 476px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding:5px 15px;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.15);
+}
+.card img{
+    width:300px;
+    height:256px;
+    border-radius: 5px;
+}
+.card h3{
+    color:#18191F;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 40px;
+}
+.card p{
+color: rgba(0, 0, 0, 0.87);
+font-family: Inter;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+text-align: left !important;
+}
+.fa{
+    width:16px;
+    height: 16px;
+    color: #FB8200;
+}
+.card small{
+color: #787885;
+font-family: Inter;
+font-size: 0.9rem;
+font-style: normal;
+font-weight: 700;
+line-height: 143%; 
+letter-spacing: 0.252px;
+}
 
 
 
 /* responsive part */
 
 @media screen and (max-width: 576px) {
-    nav{
+    nav {
         width:100%;
         flex-direction: column;
-        gap:20px;
+        gap:30px;
     }
     nav ul{
         gap:20px;
@@ -117,7 +196,7 @@ button i{
         background-position: top center;
         
     }
-    .banner-content{
+    .banner-content , .collection-div p{
         width:90%;
         height: auto;
         align-items: center;
@@ -142,5 +221,12 @@ button i{
         height:190px;
         
     }
-    
+    .sponsor{
+        width:90%;
+        flex-wrap: wrap;
+        gap:10px;
+    }
+    .image-gallery{
+        grid-template-columns: 1fr;
+    }
 }
